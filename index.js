@@ -60,7 +60,7 @@ function getWinners(pGetFinals, data) {
     let f = pGetFinals(data);
     let winners = [];
     for (let i = 0; i < f.length; i++) {
-        let winnerName = "";
+        let winnerName = "Tie";
         if (f[i]["Home Team Goals"] > f[i]["Away Team Goals"]) {
             winnerName = f[i]["Home Team Name"];
         } else if (f[i]["Home Team Goals"] < f[i]["Away Team Goals"]) {
